@@ -1,0 +1,102 @@
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 0, 0);
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+    color: white;
+}
+
+.banner-text-container-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.banner-text {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Estilos para el lado izquierdo */
+.left-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.left-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Línea vertical entre los dos div */
+.vertical-line {
+    width: 1px;
+    background-color: gray;
+    height: 100px;
+    margin: 0 20px;
+}
+
+/* Estilos para el lado derecho */
+.right-side {
+    flex: 2;
+    position: relative;
+}
+
+.right-text {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@media (min-width: 768px) {
+    .banner-text {
+            font-size: 2rem;
+        }
+    .right-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner-text {
+            font-size: 2.5rem;
+        }
+    .right-text {
+        font-size: 1.4rem;
+    }
+}
