@@ -1,4 +1,6 @@
 import Banner from "./Banner";
+import CardsInfo from "./CardsInfo";
+import AboutUs from "./AboutUs";
 import { info } from "../../utilities/information";
 import { Fragment } from "react";
 
@@ -19,6 +21,12 @@ export function Main() {
           );
         })}
       </main>
+      <section id="services-section">
+        <CardsInfo />
+      </section>
+      <section>
+        <AboutUs />
+      </section>
     </Fragment>
   );
 }

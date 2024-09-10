@@ -1,0 +1,34 @@
+.container-card{
+    padding: 80px;
+}
+
+.red-background {
+    background-color: #ff0000;
+    height: 100%;
+    display: flex;
+    align-items:flex-end;
+}
+
+.image-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   /*  object-position: center; */
+}
+
+.title-card{
+    font-weight: bold;
+}
+
+.paragraph-card{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+}
