@@ -1,30 +1,18 @@
-import Banner from "./Banner";
-import CardsInfo from "./CardsInfo";
-import AboutUs from "./AboutUs";
-import { info } from "../../utilities/information";
+import Company from "./Company/Company";
+import Services from "./Servi/Services";
+import AboutUs from "./AboutUs/AboutUs";
 import { Fragment } from "react";
 
 export function Main() {
   return (
     <Fragment>
-      <main id="company-section" className="main-container">
-        {Object.values(info).map((banner, i) => {
-          return (
-            <Banner
-              key={i}
-              paragraph={banner.paragraph}
-              img={banner.img}
-              text={banner.text}
-              position={banner.position}
-              logoside={banner.logoside}
-            />
-          );
-        })}
-      </main>
-      <section id="services-section">
-        <CardsInfo />
+      <section id="company-section">
+        <Company />
       </section>
-      <section>
+      <section id="services-section">
+        <Services />
+      </section>
+      <section id="aboutus-section">
         <AboutUs />
       </section>
     </Fragment>

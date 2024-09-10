@@ -1,5 +1,5 @@
-import Banner from "./Banner";
-import { aboutinfo } from "../../Utilities/aboutusInfo";
+import Banner from "../../Banner/Banner";
+import { aboutinfo } from "../../../Utilities/infoAboutUs";
 
 function AboutUs() {
   return (

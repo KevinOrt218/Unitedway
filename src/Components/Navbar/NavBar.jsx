@@ -52,7 +52,7 @@ function NavBar() {
               Services
             </Nav.Link>
             <Nav.Link
-              href="#"
+              href="#aboutus-section"
               onClick={() => handleClick("about")}
               className={activeSection === "about" ? "active-link" : ""}
             >

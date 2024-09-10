@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
-import "./CardInfo.css";
+import "./Cards.css";
 
-function ServicesSection() {
+function Cards() {
   return (
     <Container fluid className="my-5" id="">
       <Row className="mb-4">
@@ -40,4 +40,4 @@ function ServicesSection() {
   );
 }
 
-export default ServicesSection;
+export default Cards;

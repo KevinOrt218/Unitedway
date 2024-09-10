@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { Fragment } from "react";
-import "../../Components/Main/Banner.css";
+import "../../Components/Banner/Banner.css";
 import logo from "/images/Unitedway_logo.png";
 
 function Banner({ paragraph, img, text, position }) {
