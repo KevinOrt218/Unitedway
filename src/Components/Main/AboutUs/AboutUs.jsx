@@ -12,7 +12,6 @@ function AboutUs() {
             img={banner.img}
             text={banner.text}
             position={banner.position}
-            logoside={banner.logoside}
           />
         );
       })}
