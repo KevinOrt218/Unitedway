@@ -1,19 +1,77 @@
+/* Estilo base para el banner-subtext */
 .banner-subtext {
     text-align: justify;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    /* Tamaño de fuente base */
     color: #333;
-    padding: 40px 90px 40px 90px;
+    padding: 20px;
+    /* Ajusta el padding para pantallas más pequeñas */
     font-weight: 600;
     font-style: italic;
 }
 
-.row-container h3{
+.row-container h3 {
     margin: 0;
-    
+    font-size: 1.1rem;
+    /* Tamaño de fuente para títulos */
 }
 
-@media (min-width: 768px) {
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 767px) {
+    .banner-subtext {
+        font-size: 0.9rem;
+        /* Tamaño de fuente más pequeño para pantallas muy pequeñas */
+        padding: 20px 10px;
+        /* Menos padding en pantallas pequeñas */
+    }
+
+    .row-container h3 {
+        font-size: 1rem;
+        /* Tamaño de fuente más pequeño para títulos */
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner-subtext {
+        font-size: 1rem;
+        /* Tamaño de fuente para pantallas medianas */
+        padding: 30px 20px;
+        /* Padding ajustado para pantallas medianas */
+    }
+
+    .row-container h3 {
+        font-size: 1.1rem;
+        /* Tamaño de fuente para títulos */
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 992px) {
     .banner-subtext {
         font-size: 1.2rem;
+        /* Tamaño de fuente para pantallas grandes */
+        padding: 40px 60px;
+        /* Padding más amplio para pantallas grandes */
+    }
+
+    .row-container h3 {
+        font-size: 1.2rem;
+        /* Tamaño de fuente para títulos */
+    }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media (min-width: 1200px) {
+    .banner-subtext {
+        font-size: 1.4rem;
+        /* Tamaño de fuente para pantallas muy grandes */
+        padding: 40px 90px;
+        /* Padding más amplio para pantallas muy grandes */
+    }
+
+    .row-container h3 {
+        font-size: 1.3rem;
+        /* Tamaño de fuente más grande para títulos */
     }
 }

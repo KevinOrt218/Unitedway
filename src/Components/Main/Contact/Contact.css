@@ -1,3 +1,69 @@
-.p-text{
+/* Estilos base */
+.banner-subtext {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+    padding: 40px 20px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.p-text {
     margin: 0;
+    font-size: 1rem;
+}
+
+/* Ajuste general para pantallas pequeñas */
+@media (max-width: 767px) {
+    .banner-subtext {
+        padding: 20px 10px;
+        /* Reduce el padding en pantallas más pequeñas */
+        font-size: 0.9rem;
+        /* Texto ligeramente más pequeño en móviles */
+    }
+
+    .p-text {
+        font-size: 0.85rem;
+        /* Texto más pequeño en pantallas pequeñas */
+    }
+}
+
+/* Ajustes para pantallas medianas (entre 768px y 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner-subtext {
+        padding: 30px 15px;
+        /* Ajuste de padding para pantallas medianas */
+        font-size: 1.1rem;
+    }
+
+    .p-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* Ajustes para pantallas grandes (mayores de 992px) */
+@media (min-width: 992px) {
+    .banner-subtext {
+        padding: 50px 40px;
+        /* Mayor padding en pantallas grandes */
+        font-size: 1.2rem;
+    }
+
+    .p-text {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy grandes (mayores de 1200px) */
+@media (min-width: 1200px) {
+    .banner-subtext {
+        padding: 60px 80px;
+        font-size: 1.3rem;
+        /* Texto más grande en pantallas grandes */
+    }
+
+    .p-text {
+        font-size: 1.1rem;
+        /* Ajuste del texto en pantallas grandes */
+    }
 }

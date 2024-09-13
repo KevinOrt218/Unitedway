@@ -1,5 +1,7 @@
+/* Estilo base para el contenedor de tarjetas */
 .container-card {
-    padding: 80px;
+    padding: 40px;
+    /* Reduce el padding en pantallas pequeñas */
 }
 
 .section-title {
@@ -12,16 +14,6 @@
     height: 100%;
     display: flex;
     align-items: flex-end;
-}
-
-/* Estilo para que el fondo rojo ocupe la mitad del ancho en pantallas pequeñas */
-@media (max-width: 767px) {
-    .red-background {
-        width: 50%;
-        /* Ocupa la mitad del ancho en pantallas pequeñas */
-        /* margin: 0 auto; */
-        /* Centra el fondo rojo horizontalmente */
-    }
 }
 
 .image-container {
@@ -39,10 +31,152 @@
 
 .title-card {
     font-weight: bold;
+    text-align: center;
 }
 
 .paragraph-card {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     font-style: italic;
+    text-align: justify;
+}
+
+/* Estilo responsive para pantallas pequeñas */
+@media (max-width: 767px) {
+    .container-card {
+        padding: 20px;
+        /* Menos padding en pantallas pequeñas */
+    }
+
+    .image-container {
+        height: 200px;
+        /* Reduce la altura de las imágenes en pantallas pequeñas */
+    }
+
+    .red-background {
+        width: 100%;
+        /* El fondo rojo ocupa todo el ancho */
+        height: auto;
+        padding: 10px 0;
+        /* Reduce el padding en pantallas pequeñas */
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        /* Reduce el tamaño del título en pantallas pequeñas */
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .title-card {
+        font-size: 1.2rem;
+        /* Ajusta el tamaño del título de las tarjetas */
+    }
+
+    .paragraph-card {
+        font-size: 0.9rem;
+        /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+}
+
+/* Estilo responsive para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-card {
+        padding: 40px 20px;
+        /* Ajusta el padding para pantallas medianas */
+    }
+
+    .image-container {
+        height: 220px;
+        /* Ajusta la altura de las imágenes en pantallas medianas */
+    }
+
+    .red-background {
+        width: 50%;
+        /* El fondo rojo ocupa la mitad del ancho */
+        padding: 10px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        /* Ajusta el tamaño del título */
+        text-align: right;
+    }
+
+    .title-card {
+        font-size: 1.4rem;
+        /* Ajusta el tamaño del título de las tarjetas */
+    }
+
+    .paragraph-card {
+        font-size: 1rem;
+        /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Estilo responsive para pantallas grandes */
+@media (min-width: 992px) {
+    .container-card {
+        padding: 60px 40px;
+        /* Más espacio en pantallas grandes */
+    }
+
+    .image-container {
+        height: 250px;
+        /* Mantiene el tamaño original en pantallas grandes */
+    }
+
+    .red-background {
+        width: 33.33%;
+        /* Ajusta el fondo rojo para pantallas grandes */
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        /* Aumenta el tamaño del título */
+    }
+
+    .title-card {
+        font-size: 1.6rem;
+        /* Títulos más grandes */
+    }
+
+    .paragraph-card {
+        font-size: 1.2rem;
+        /* Ajusta el tamaño del texto */
+    }
+}
+
+/* Estilo responsive para pantallas muy grandes */
+@media (min-width: 1200px) {
+    .container-card {
+        padding: 80px 60px;
+        /* Padding más amplio para pantallas muy grandes */
+    }
+
+    .image-container {
+        height: 300px;
+        /* Imágenes más grandes en pantallas muy grandes */
+    }
+
+    .red-background {
+        width: 25%;
+        /* Ajusta el fondo rojo a un ancho menor en pantallas muy grandes */
+    }
+
+    .section-title {
+        font-size: 3rem;
+        /* Título aún más grande */
+    }
+
+    .title-card {
+        font-size: 1.8rem;
+        /* Títulos más grandes */
+    }
+
+    .paragraph-card {
+        font-size: 1.3rem;
+        /* Texto más grande */
+    }
 }

@@ -1,3 +1,4 @@
+/* Contenedor principal del banner */
 .banner-container {
     position: relative;
     width: 100%;
@@ -5,74 +6,74 @@
     overflow: hidden;
 }
 
+/* Imagen del banner con object-fit: cover */
 .banner-image {
     width: 100%;
     height: auto;
     object-fit: cover;
+    /* Ajusta la imagen para que cubra el contenedor */
 }
 
+
+/* Contenedor del texto en el centro */
 .banner-text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.548);
     padding: 20px;
     text-align: center;
     max-width: 80%;
     color: white;
 }
 
+/* Posicionamientos adicionales del texto */
 .banner-text-container-right {
-    position: absolute;
-    top: 50%;
     right: 0;
+    top: 50%;
     transform: translateY(-50%);
 }
 
 .banner-text-container-right-up {
-    position: absolute;
-    top: 50%;
     right: 0;
-    transform: translateY(-150%);
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 .banner-text-container-right-down {
-    position: absolute;
-    top: 75%;
     right: 0;
-    transform: translateY(-150%);
+    top: 75%;
+    transform: translateY(-50%);
 }
 
 .banner-text-container-left {
-    position: absolute;
+    left: 0;
     top: 50%;
-    right: 0;
-    transform: translateX(-100%);
+    transform: translateY(-50%);
 }
 
 .banner-text-container-left-up {
-    position: absolute;
-    top: 15%;
-    right: 0;
-    transform: translateX(-100%);
+    left: 0;
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 .banner-text-container-left-down {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateX(-100%);
+    left: 0;
+    top: 75%;
+    transform: translateY(-50%);
 }
 
-
+/* Estilos del texto dentro del banner */
 .banner-text {
     font-weight: bold;
     font-style: italic;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0;
 }
 
+/* Subtexto del banner */
 .banner-subtext-container {
     position: absolute;
     top: 50%;
@@ -85,15 +86,48 @@
     margin: 0;
 }
 
-@media (min-width: 768px) {
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 767px) {
+    .banner-text-container {
+        max-width: 90%;
+        padding: 10px;
+        background-color: rgba(255, 0, 0, 0.7);
+        /* Más opacidad para pantallas pequeñas */
+    }
+
+    .banner-text {
+        font-size: 1rem;
+        /* Texto más pequeño para pantallas pequeñas */
+    }
+
+    .banner-image {
+        height: 50vh;
+        /* Ajusta la altura de la imagen en pantallas pequeñas */
+    }
+}
+
+/* Estilos responsivos para pantallas medianas (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .banner-text-container {
+        max-width: 80%;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .banner-image {
+        height: 60vh;
+    }
+}
+
+/* Estilos responsivos para pantallas grandes (1024px y superiores) */
+@media (min-width: 1024px) {
     .banner-text {
         font-size: 2rem;
     }
 
-}
-
-@media (min-width: 1024px) {
-    .banner-text {
-        font-size: 2.2rem;
+    .banner-image {
+        height: 70vh;
     }
 }

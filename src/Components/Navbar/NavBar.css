@@ -1,5 +1,75 @@
-.active-link {
-    color: rgb(0, 0, 0) !important;
-    font-weight:bolder;
+/* Estilo del logo */
+.custom-navbar .navbar-brand img {
+    width: 200px;
+    height: auto;
 }
 
+.active-link {
+    color: rgb(0, 0, 0) !important;
+    font-weight: bolder;
+}
+
+/* Estilo del navbar */
+.custom-navbar {
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos responsivos */
+@media (max-width: 576px) {
+
+    /* Ajusta el tamaño del logo para pantallas más pequeñas */
+    .custom-navbar .navbar-brand img {
+        width: 150px;
+        height: auto;
+    }
+
+    /* Ajusta los enlaces para que se alineen en el centro y tengan más espacio entre ellos */
+    .custom-navbar .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+    }
+
+    .custom-navbar .nav-link.active-link {
+        font-size: 1rem;
+        color: #000 !important;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Ajustes para tablets */
+    .custom-navbar .navbar-brand img {
+        width: 180px;
+        height: auto;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 1rem;
+        padding: 0.7rem 1rem;
+    }
+
+    .custom-navbar .nav-link.active-link {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* Estilos para pantallas grandes */
+    .custom-navbar .navbar-brand img {
+        width: 250px;
+        height: auto;
+    }
+
+    .custom-navbar .nav-link {
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .custom-navbar .nav-link.active-link {
+        font-size: 1.3rem;
+    }
+}

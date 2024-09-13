@@ -1,18 +1,22 @@
+/* Estilos base para el contenedor principal */
 .bottom-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: white;
+    flex-wrap: nowrap;
+    /* Mantén el logo y el texto en la misma fila */
 }
 
+/* Estilo para la parte izquierda (logo) */
 .left-side {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 20px;
 }
@@ -20,8 +24,11 @@
 .left-image {
     max-width: 100%;
     height: auto;
+    max-height: 80px;
+    /* Tamaño máximo para el logo */
 }
 
+/* Estilo para la línea vertical */
 .vertical-line {
     width: 4px;
     background-color: gray;
@@ -29,8 +36,12 @@
     margin: 0 20px;
 }
 
+/* Estilo para la parte derecha (texto) */
 .right-side {
     flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
 }
 
@@ -39,25 +50,78 @@
     color: black;
     font-weight: 600;
     font-style: italic;
+    text-align: left;
+    padding-left: 20px;
 }
 
+/* Estilos responsive para pantallas pequeñas (menos de 767px) */
+@media (max-width: 767px) {
+    .bottom-container {
+        flex-direction: row;
+        justify-content: space-between;
+        /* Mantén el logo y el texto separados */
+        padding: 10px;
+    }
 
-@media (min-width: 768px) {
-    .banner-text {
-        font-size: 2rem;
+    .left-image {
+        max-width: 130px;
+        /* Tamaño reducido para el logo en pantallas pequeñas */
+        max-height: 130px;
+    }
+
+    .vertical-line {
+        width: 2px;
+        /* Oculta la línea vertical en pantallas pequeñas */
     }
 
     .right-text {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
+        /* Reduce el tamaño del texto */
+        text-align: left;
+        /* Mantén el texto alineado a la izquierda */
+        padding-left: 10px;
+        /* Reduce el padding en pantallas pequeñas */
     }
 }
 
+/* Estilos para pantallas medianas (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bottom-container {
+        flex-direction: row;
+    }
+
+    .left-image {
+        max-width: 235px;
+        /* Ajusta el tamaño del logo */
+        max-height: 235px;
+    }
+
+    .right-text {
+        font-size: 1.1rem;
+        padding-left: 15px;
+    }
+}
+
+/* Estilos para pantallas grandes (1024px en adelante) */
 @media (min-width: 1024px) {
-    .banner-text {
-        font-size: 2.5rem;
+    .bottom-container {
+        flex-direction: row;
+        padding: 30px;
+    }
+
+    .left-image {
+        max-width: 325px;
+        /* Tamaño más grande para el logo */
+        max-height: 325px;
+    }
+
+    .vertical-line {
+        height: 120px;
+        /* Aumenta la altura de la línea */
     }
 
     .right-text {
         font-size: 1.2rem;
+        padding-left: 20px;
     }
 }

@@ -9,25 +9,24 @@ function Company() {
   const footers = Object.values(infoBannerFooter);
 
   return (
-      <section className="main-container">
-        {banners.map((banner, i) => (
-          <Fragment key={i}>
-            <Banner
-              paragraph={banner.paragraph}
-              img={banner.img}
-              text={banner.text}
-              position={banner.position}
-              logoside={banner.logoside}
+    <section className="main-container">
+      {banners.map((banner, i) => (
+        <Fragment key={i}>
+          <Banner
+            paragraph={banner.paragraph}
+            img={banner.img}
+            text={banner.text}
+            position={banner.position}
+          />
+          {footers[i] && (
+            <BannerFooter
+              logo={footers[i].logo}
+              textfooter={footers[i].textfooter}
             />
-            {footers[i] && (
-              <BannerFooter
-                logo={footers[i].logo}
-                textfooter={footers[i].textfooter}
-              />
-            )}
-          </Fragment>
-        ))}
-      </section>
+          )}
+        </Fragment>
+      ))}
+    </section>
   );
 }
 
