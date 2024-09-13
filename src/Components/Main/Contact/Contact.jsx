@@ -1,11 +1,10 @@
 import Banner from "../../Banner/Banner";
-import "./AboutUs.css";
-import { aboutinfo } from "../../../Utilities/infoAboutUs";
+import { infoContact } from "../../../Utilities/infoContact";
 
-function AboutUs() {
+function Contact() {
   return (
     <section>
-      {Object.values(aboutinfo).map((banner, i) => {
+      {Object.values(infoContact).map((banner, i) => {
         return (
           <div key={i}>
             <Banner
@@ -22,4 +21,4 @@ function AboutUs() {
   );
 }
 
-export default AboutUs;
+export default Contact;

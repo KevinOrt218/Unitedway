@@ -1,0 +1,15 @@
+.banner-subtext {
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 40px 90px 40px 90px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+@media (min-width: 768px) {
+    .banner-subtext {
+        font-size: 1.5rem;
+    }
+}

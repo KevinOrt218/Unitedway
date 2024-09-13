@@ -59,7 +59,7 @@ function NavBar() {
               AboutUs
             </Nav.Link>
             <Nav.Link
-              href="#"
+              href="#contact-section"
               onClick={() => handleClick("contact")}
               className={activeSection === "contact" ? "active-link" : ""}
             >
