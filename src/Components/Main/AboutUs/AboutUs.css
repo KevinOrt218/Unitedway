@@ -7,9 +7,13 @@
     font-style: italic;
 }
 
+.row-container h3{
+    margin: 0;
+    
+}
 
 @media (min-width: 768px) {
     .banner-subtext {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }

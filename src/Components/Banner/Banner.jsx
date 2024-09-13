@@ -33,7 +33,6 @@ function Banner({ paragraph, img, position }) {
         return "";
     }
   };
-
   return (
     <Fragment>
       <div className="banner-container">
@@ -45,7 +44,6 @@ function Banner({ paragraph, img, position }) {
     </Fragment>
   );
 }
-
 export default Banner;
 
 Banner.propTypes = {

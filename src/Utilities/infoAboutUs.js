@@ -3,8 +3,7 @@ export const aboutinfo = [
     paragraph: "The client first",
     img: "/images/clientfisrt.jpg",
     position: "right",
-    subText: ["We continue to invest in our people, infrastructure, and technology to ensure that our clients have a competitive edge and can create lasting business value.", 
-    "We have developed a reputation of being a reliable and trustworthy partner to our clients."],
+    subText: "We continue to invest in our people, infrastructure, and technology to ensure that our clients have a competitive edge and can create lasting business value. \n We have developed a reputation of being a reliable and trustworthy partner to our clients.",
     layoutType: "single"
     
   },
@@ -12,11 +11,22 @@ export const aboutinfo = [
     paragraph: "Why select United-Way CHB",
     img: "/images/contract-signing.jpg",
     subText: [
-      "We offer storage solutions designed to improve efficiency.", 
-      "Our facilities are equipped with the latest technology."
-    ], // Para dos columnas, usa un array con dos párrafos,
+      {
+        fisrtTitle: "Single stop full-service",
+        FirstText: "We offer a one stop and hassle-free Total Warehouse Solution",
+        secondTitle: "World class service",
+        secondText: "Friendly personal account manager and global support \n team are ready to meet your individual needs.",
+        
+      },
+      {
+        fisrtTitle: "Experienced and reliable",
+        FirstText: "Highly experienced and professional warehousing experts",
+        secondTitle: "Operational excelence",
+        secondText: "Contiuos investment in people, infrastructure, and technology \nto optimize business processes, improve product offerings, and \nto increase value delivered to clients.",
+      }
+    ],
     position: "left-down",
-    layoutType: "two-columns"
+    layoutType: "multi"
     
   },
   {

@@ -3,10 +3,10 @@ import "./Cards.css";
 
 function Cards() {
   return (
-    <Container fluid className="my-5" id="">
+    <Container fluid className="my-5">
       <Row className="mb-4">
         <Col md={3} className="red-background text-end">
-          <h2 className="text-white py-3 ps-4">Our Services</h2>
+          <h2 className="text-white py-3 ps-4 section-title">Our Services</h2>
         </Col>
       </Row>
       <Row className="container-card">

@@ -9,7 +9,6 @@
     background-color: white;
 }
 
-/* Estilos para el lado izquierdo */
 .left-side {
     flex: 1;
     display: flex;
@@ -23,15 +22,13 @@
     height: auto;
 }
 
-/* Línea vertical entre los dos div */
 .vertical-line {
-    width: 1px;
+    width: 4px;
     background-color: gray;
     height: 100px;
     margin: 0 20px;
 }
 
-/* Estilos para el lado derecho */
 .right-side {
     flex: 2;
     position: relative;
@@ -40,7 +37,7 @@
 .right-text {
     font-size: 1rem;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
     font-style: italic;
 }
 
@@ -61,6 +58,6 @@
     }
 
     .right-text {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
